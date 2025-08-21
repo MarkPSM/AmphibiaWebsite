@@ -1,0 +1,211 @@
+:root {
+  --green: #00e253;
+  --black: #262626;
+  --white: #f0f0f0;
+  --orange: #ff7d37;
+  --blue: #2475d8;
+  --font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font);
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+span {
+  font-family: "AmbphibiaFont", sans-serif;
+}
+
+@font-face {
+  font-family: "AmbphibiaFont";
+  src: url("./font/Amphibiafont_full-Regular.ttf") format("truetype");
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, var(--black), #000);
+}
+.hero .logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+.hero h1 span {
+  color: var(--green);
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: var(--green);
+  color: var(--black);
+  border-radius: 8px;
+  transition: all ease-in-out 0.3s;
+
+  font-family: "AmbphibiaFont", sans-serif;
+  text-decoration: none;
+}
+.hero .btn:hover {
+  background: var(--orange);
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 60px 20px;
+  background: #1e1e1e;
+}
+
+.benefits .card {
+  background: var(--green);
+  color: var(--black);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+
+  font-family: "AmbphibiaFont", sans-serif;
+}
+
+#fst {
+  background-color: var(--green);
+}
+
+#scnd {
+  background-color: var(--orange);
+}
+
+#trd {
+  background-color: var(--blue);
+}
+
+#frt {
+  background-color: var(--green);
+}
+
+.downArrow {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.sobre {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.depoimentos {
+  padding: 60px 20px;
+  background: #1e1e1e;
+  text-align: center;
+}
+.carousel .testimonial {
+  display: none;
+}
+.carousel .testimonial.active {
+  display: block;
+}
+
+.gamificacao {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--black);
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#play {
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+
+  fill: var(--orange);
+}
+
+#play:hover {
+  fill: var(--green);
+}
+
+.faq {
+  padding: 60px 20px;
+  background-color: #222121;
+}
+.faq-item {
+  margin-bottom: 10px;
+}
+.faq-question {
+  width: 100%;
+  padding: 12px;
+  background: var(--green);
+  color: var(--black);
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: left;
+  font-weight: bold;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  transition: all ease-in-out 0.3s;
+
+  font-family: "AmbphibiaFont", sans-serif;
+}
+
+.faq-question:hover {
+  background: var(--orange);
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background: #333;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 60px 20px;
+}
+.newsletter input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 10px;
+}
+.newsletter button {
+  padding: 10px 20px;
+  background: var(--green);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background: var(--orange);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+}
+footer .socials a {
+  margin: 0 10px;
+  color: var(--green);
+  text-decoration: none;
+}
